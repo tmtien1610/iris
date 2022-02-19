@@ -4,7 +4,7 @@ Created on Sat Feb 19 10:05:24 2022
 
 @author: Admin
 """
-from iris import predict_iris
+from B1812311_TrinhMinhTien_train import predict_iris
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
