@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 public/
+"worker: python B1812311_TrinhMinhTien_app.py" 
