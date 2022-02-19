@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Phân loại hoa IRIS</h1>
+    <h2>Nhập các thuộc tính:</h2>
+    <form action="/result" method="POST">
+        <label for="sl">Sepal Length</label> <input id="sl" name="sl" type="text" required value="">
+        <br>
+        <label for="sw">Sepal Width</label> <input id="sw" name="sw" type="text" required value="">
+        <br>
+        <label for="pl">Petal Length</label><input id="pl" name="pl" type="text" required value="">
+        <br>
+        <label for="pw">Petal Width</label><input id="pw" name="pw" type="text" required value="">
+        <br>
+        <input id="submit" name="submit" type="submit" value="Analyze">
+    </form>
+    {% if message %}
+        <p>Result: {{ message }}</p>
+    {% endif %}
+
+</body>
+</html>
